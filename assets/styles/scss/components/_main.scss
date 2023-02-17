@@ -1,3 +1,11 @@
+@import '../abstract/media-queries';
+
 .main {
   background-color: var(--neutral-white);
+
+  @include media-query($lg-screen){
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 3rem hsla(var(--neutral-dark-gray-blue-hsl),.3);
+  }
 }

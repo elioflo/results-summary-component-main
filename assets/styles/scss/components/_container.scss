@@ -1,4 +1,15 @@
+@import '../abstract/media-queries';
+
 .container {
   font-family: 'Hanken Grotesk';
   min-height: 100vh;
+
+  @include media-query($sm-screen){
+    display: grid;
+    place-items: center;
+  }
+
+  @include media-query($lg-screen){
+    font-size: 17px;
+  }
 }

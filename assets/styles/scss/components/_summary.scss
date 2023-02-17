@@ -1,10 +1,25 @@
+@import '../abstract/media-queries';
+
 .summary {
   padding: 1.5rem 0;
+  max-width: $sm;
+  margin: 0 auto;
   &__title {
     display: block;
     width: calc(100% - 4rem);
     margin: 0 auto;
     color: var(--neutral-dark-gray-blue);
     font-size: 1.2rem;
+  }
+
+  @include media-query($lg-screen){
+    width: 50%;
+    padding: 2.5rem 0;
+
+    &__title {
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+      width: calc(100% - 5rem);
+    }
   }
 }
