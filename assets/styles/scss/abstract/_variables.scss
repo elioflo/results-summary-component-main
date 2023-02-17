@@ -1,0 +1,40 @@
+/*:root {
+  --main-color: #393E46;
+  --main-bg-color: #FAFAFA;
+}
+
+:root.dark {
+  --main-color: #FAFAFA;
+  --main-bg-color: #393E46;
+}*/
+
+:root {
+  --primary-light-red: hsl(0, 100%, 67%);
+  --primary-light-red-hsl: 0, 100%, 67%;
+  --primary-orangey-yellow: hsl(39, 100%, 56%);
+  --primary-orangey-yellow-hsl: 39, 100%, 56%;
+  --primary-green-teal: hsl(166, 100%, 37%);
+  --primary-green-teal-hsl: 166, 100%, 37%;
+  --primary-cobalt-blue: hsl(234, 85%, 45%);
+  --primary-cobalt-blue-hsl: 234, 85%, 45%;
+
+  --gradients-light-slate-blue-bg: hsl(252, 100%, 67%);
+  --gradients-light-slate-blue-bg-hsl: 252, 100%, 67%;
+  --gradients-light-royal-blue-bg: hsl(241, 81%, 54%);
+  --gradients-light-royal-blue-bg-hsl: 241, 81%, 54%;
+  
+  
+  --gradients-violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --gradients-violet-blue-circle-hsl: h256, 72%, 46%, 1;
+  --gradients-persian-blue-circle: hsla(241, 72%, 46%, 0);
+  --gradients-persian-blue-circle-hsl: h241, 72%, 46%, 0;
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-white-hsl: 0, 0%, 100%;
+  --neutral-pale-blue: hsl(221, 100%, 96%);
+  --neutral-pale-blue-hsl: 221, 100%, 96%;
+  --neutral-light-lavender: hsl(241, 100%, 89%);
+  --neutral-light-lavender-hsl: 241, 100%, 89%;
+  --neutral-dark-gray-blue: hsl(224, 30%, 27%);
+  --neutral-dark-gray-blue-hsl: 224, 30%, 27%;
+}

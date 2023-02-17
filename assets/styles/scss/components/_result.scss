@@ -1,0 +1,46 @@
+.result {
+  $border-bottom-radius: 2rem;
+  background: linear-gradient(var(--gradients-light-slate-blue-bg),var(--gradients-light-royal-blue-bg));
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom-left-radius: $border-bottom-radius;
+  border-bottom-right-radius: $border-bottom-radius;
+  color: var(--neutral-light-lavender);
+  font-weight: 500;
+  &__title {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  &__text {
+    margin: 0;
+    margin-top: .9rem;
+    display: inline-block;
+    width: calc(100% - 6rem);
+  }
+  &__status {
+    margin: 0;
+    color: var(--neutral-white);
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  &__qualification {
+    $side: 9rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 100%;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    width: $side;
+    height: $side;
+    background: linear-gradient(var(--gradients-violet-blue-circle),var(--gradients-persian-blue-circle));
+  }
+
+  &__score {
+    color: var(--neutral-white);
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+}

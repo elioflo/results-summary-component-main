@@ -1,0 +1,10 @@
+.summary {
+  padding: 1.5rem 0;
+  &__title {
+    display: block;
+    width: calc(100% - 4rem);
+    margin: 0 auto;
+    color: var(--neutral-dark-gray-blue);
+    font-size: 1.2rem;
+  }
+}
