@@ -474,30 +474,71 @@ template {
 }
 
 .qualification {
-  box-sizing: border-box;
   width: calc(100% - 4rem);
   font-weight: 500;
   margin: 1rem auto;
+  border-radius: 1rem;
+  --opacity: 0.05;
+  --border-size: 1px;
+  --border-size-negative: calc(0px - var(--border-size));
+  --border-radius: 0.7rem;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --corner-size: .5rem;
+  --bg-color: rgba(0, 0, 0, 0.1);
+  border: var(--border-size) solid var(--border-color);
+  border-radius: var(--border-radius);
+  position: relative;
+}
+.qualification::before, .qualification::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: white;
+}
+.qualification::before {
+  top: var(--border-size-negative);
+  bottom: var(--border-size-negative);
+  left: var(--corner-size);
+  right: var(--corner-size);
+}
+.qualification::after {
+  left: var(--border-size-negative);
+  right: var(--border-size-negative);
+  top: var(--corner-size);
+  bottom: var(--corner-size);
+}
+.qualification__bg {
+  position: absolute;
+  top: var(--border-size-negative);
+  bottom: var(--border-size-negative);
+  left: var(--border-size-negative);
+  right: var(--border-size-negative);
+  background-color: var(--bg-color);
+  z-index: 1;
+  border-radius: var(--border-radius);
+}
+.qualification__content {
+  position: relative;
   display: flex;
   align-items: center;
-  border-radius: 1rem;
+  z-index: 2;
   padding: 0 1rem;
 }
 .qualification--reaction {
   color: var(--primary-light-red);
-  background-color: hsla(var(--primary-light-red-hsl), 0.05);
+  --bg-color: hsla(var(--primary-light-red-hsl), var(--opacity));
 }
 .qualification--memory {
   color: var(--primary-orangey-yellow);
-  background-color: hsla(var(--primary-orangey-yellow-hsl), 0.05);
+  --bg-color: hsla(var(--primary-orangey-yellow-hsl), var(--opacity));
 }
 .qualification--verbal {
   color: var(--primary-green-teal);
-  background-color: hsla(var(--primary-green-teal-hsl), 0.05);
+  --bg-color: hsla(var(--primary-green-teal-hsl), var(--opacity));
 }
 .qualification--visual {
   color: var(--primary-cobalt-blue);
-  background-color: hsla(var(--primary-cobalt-blue-hsl), 0.05);
+  --bg-color: hsla(var(--primary-cobalt-blue-hsl), var(--opacity));
 }
 .qualification__description {
   margin-left: 0.7rem;
